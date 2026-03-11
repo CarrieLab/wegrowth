@@ -1,0 +1,84 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="56" x2="880" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1222"/>
+      <stop offset="1" stop-color="#0F2130"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="184" y1="126" x2="760" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00C49E"/>
+      <stop offset="1" stop-color="#5EEAD4"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 168) rotate(146) scale(360 260)">
+      <stop stop-color="#00C49E" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#00C49E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 580) rotate(-20) scale(340 220)">
+      <stop stop-color="#38BDF8" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="720" rx="36" fill="url(#bg)"/>
+  <rect width="960" height="720" rx="36" fill="url(#glowA)"/>
+  <rect width="960" height="720" rx="36" fill="url(#glowB)"/>
+
+  <g opacity="0.22">
+    <path d="M120 170H840" stroke="#E2E8F0"/>
+    <path d="M120 250H840" stroke="#E2E8F0"/>
+    <path d="M120 330H840" stroke="#E2E8F0"/>
+    <path d="M120 410H840" stroke="#E2E8F0"/>
+    <path d="M120 490H840" stroke="#E2E8F0"/>
+    <path d="M180 110V610" stroke="#E2E8F0"/>
+    <path d="M300 110V610" stroke="#E2E8F0"/>
+    <path d="M420 110V610" stroke="#E2E8F0"/>
+    <path d="M540 110V610" stroke="#E2E8F0"/>
+    <path d="M660 110V610" stroke="#E2E8F0"/>
+    <path d="M780 110V610" stroke="#E2E8F0"/>
+  </g>
+
+  <g opacity="0.75">
+    <path d="M210 492C260 430 330 390 420 378C510 366 588 326 640 254" stroke="url(#accent)" stroke-width="4"/>
+    <path d="M236 536C326 470 407 448 522 436C628 425 709 379 764 318" stroke="#38BDF8" stroke-opacity="0.8" stroke-width="3"/>
+  </g>
+
+  <g fill="#0E1A2B" stroke="#5EEAD4" stroke-width="2">
+    <circle cx="210" cy="492" r="19"/>
+    <circle cx="420" cy="378" r="16"/>
+    <circle cx="640" cy="254" r="19"/>
+    <circle cx="764" cy="318" r="15"/>
+    <circle cx="522" cy="436" r="13"/>
+    <circle cx="300" cy="480" r="12"/>
+    <circle cx="588" cy="326" r="12"/>
+  </g>
+
+  <g fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+    <text x="182" y="497">AI</text>
+    <text x="394" y="383">DATA</text>
+    <text x="598" y="259">BIZ</text>
+  </g>
+
+  <g>
+    <rect x="122" y="118" width="306" height="146" rx="18" fill="#0E1A2B" stroke="#2DD4BF" stroke-opacity="0.6"/>
+    <text x="148" y="162" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Intelligent Collaboration</text>
+    <text x="148" y="194" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Cross-team insights</text>
+    <text x="148" y="218" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Shared growth roadmap</text>
+    <text x="148" y="242" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Faster decision cycles</text>
+  </g>
+
+  <g>
+    <rect x="510" y="446" width="328" height="158" rx="18" fill="#0E1A2B" stroke="#38BDF8" stroke-opacity="0.55"/>
+    <text x="536" y="490" fill="#7DD3FC" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Strategic Partnership</text>
+    <text x="536" y="522" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Business + Technology alignment</text>
+    <text x="536" y="546" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Outcome-focused execution</text>
+    <text x="536" y="570" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="14">Scalable value delivery</text>
+  </g>
+
+  <g opacity="0.82" filter="url(#soft)">
+    <circle cx="318" cy="290" r="12" fill="#5EEAD4"/>
+    <circle cx="695" cy="206" r="10" fill="#38BDF8"/>
+    <circle cx="512" cy="352" r="9" fill="#5EEAD4"/>
+  </g>
+</svg>
