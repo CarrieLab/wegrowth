@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "export": "next export",
-    "build:static": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "build:static": "npm run build && touch out/.nojekyll",
+    "deploy": "npm run build:static && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "16.1.6",

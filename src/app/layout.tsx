@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.trim();
+const siteBasePath = configuredBasePath
+  ? `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`
+  : "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,9 +22,9 @@ export const metadata: Metadata = {
   description:
     "WeGrowth partners with enterprises on strategic business consulting, AI enablement, and digital product design & development to achieve measurable, sustainable growth.",
   icons: {
-    icon: "/wegrowth-logo-v2.png",
-    shortcut: "/wegrowth-logo-v2.png",
-    apple: "/wegrowth-logo-v2.png",
+    icon: `${siteBasePath}/wegrowth-logo-v2.png`,
+    shortcut: `${siteBasePath}/wegrowth-logo-v2.png`,
+    apple: `${siteBasePath}/wegrowth-logo-v2.png`,
   },
 };
 

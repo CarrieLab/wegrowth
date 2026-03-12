@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.trim();
+const siteBasePath = configuredBasePath
+  ? `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`
+  : "";
+
 const navigation = [
   { label: "Company", href: "#company" },
   { label: "Services", href: "#services" },
@@ -66,7 +71,7 @@ export default function Home() {
           <a href="#" className="flex items-center gap-3">
             <div className="relative h-11 w-11 shrink-0 rounded-xl border border-black/5 bg-white p-1.5 shadow-sm">
               <Image
-                src="/wegrowth-logo-v2.png"
+                src={`${siteBasePath}/wegrowth-logo-v2.png`}
                 alt="WeGrowth logo"
                 fill
                 className="object-contain"
@@ -234,7 +239,7 @@ export default function Home() {
             <div className="mx-auto w-full max-w-sm overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-950 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.16)]">
               <div className="relative overflow-hidden rounded-2xl">
                 <Image
-                  src="/AI_technology_photo.jpg"
+                  src={`${siteBasePath}/AI_technology_photo.jpg`}
                   alt="Business and technology collaboration meeting"
                   width={960}
                   height={1280}
